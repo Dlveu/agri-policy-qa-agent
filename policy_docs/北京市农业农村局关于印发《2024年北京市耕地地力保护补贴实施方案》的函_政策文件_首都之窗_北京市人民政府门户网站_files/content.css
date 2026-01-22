@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+body, h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ol, ul, li, form, table, th, td, a, img, span, strong, var, em, input, textarea, select, option { margin: 0; padding: 0; }
+html, body { padding: 0; border: 0; font: 14px '\5FAE\8F6F\96C5\9ED1'; color: #000; }
+ul, ol, li { list-style: none; }
+img { vertical-align: top; border: none; }
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:after { content: ''; display: block; clear: both; }
+a { color: #000; text-decoration: none; }
+dl { margin: 0; padding: 0; border: 0; }
+dt, dd { clear: both; }
+h1 { font-size: 22px; color: #000; font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; color: #000; font-weight: normal; }
+textarea, input { font-size: 12px; line-height: 15px; margin: 0; padding: 0; }
+dl { margin: 0; padding: 0; border: 0; }
+dt, dd { clear: both; }
+a:link { text-decoration: none; color: #000; }
+a:visited { text-decoration: none; color: #000; }
+a:hover { text-decoration: none; color: #000; }
+input { border: none; outline: none; }
+body { background-color: #ededed; }
+.box { margin: 0 auto; width: 1200px; background-color: #fff; }
+.container { width: 1000px; margin: 0 auto; overflow: hidden; }
+.crumbsBox { width: 1200px; margin: 0 auto; background-color: #fff; }
+.crumbs { width: 1000px; height: 56px; margin: 0 auto; line-height: 56px; font-size: 14px; color: #333; }
+.crumbs a { color: #333; }
+.repeatX { width: 100%; background: url(/zhengce/images/ty_crumbs_line.png) 0 0 repeat-x; height: 8px; }
+.headerBox { width: 1200px; margin: 0 auto; background-color: #fff; }
+.header { width: 1000px; margin: 0 auto; padding-top: 0px; }
+.header h1 { margin-bottom: 40px; }
+.header h1 p { font-size: 28px; line-height: 40px; color: #333; text-align: center; outline: none; }
+.doc-info { margin-bottom: 20px; border: 1px solid #EBEDE2; padding: 25px 30px; overflow: hidden; }
+.doc-info li { width: 50%; float: left; font: normal 14px/28px "Microsoft YaHei", "SimSun"; color: #333; }
+.doc-info li.wjly { width: 100%; font-weight: bold; color: #d30b15; }
+.othermessage { font-size: 14px; line-height: 14px; color: #999; width: 100%; margin: 0 auto 30px; }
+.othermessage dl { margin: 0 45px; }
+.othermessage dl a { color: #999; }
+.othermessage dl a.on { color: #333; }
+.zc_zcwj { margin: auto; margin-top: auto; width: 938px; border: 1px solid #EBEDE2; padding: 25px 30px; font: normal 16px/28px "Microsoft YaHei","SimSun"; color: #333; margin-top: 35px; overflow: hidden; }
+.zc_zcwj span { float: left; font-weight: bold; color: #333; }
+.bdsharebuttonbox { margin-left: -10px; }
+.bdsharebuttonbox a { margin: -1px 0 0 10px !important; font-size: 14px !important; }
+.mainTextBox { width: 1200px; background-color: #fff; margin: 0 auto; }
+#mainText { width: 1000px; padding: 0 0 25px 0; margin: 0 auto; color: #404040; font-size: 16px; line-height: 200%; }
+#mainText p { margin-bottom: 20px; outline: none; }
+.relevantdoc { width: 100%; overflow: hidden; padding-bottom: 30px; }
+.relevanttitle span { display: inline-block; border-bottom: 2px solid #d30b15; font-size: 18px; line-height: 34px; font-weight: bold; color: #d30b15; }
+.relevantdoc ul li,.fujian li{ font: normal 16px/38px "Microsoft YaHei", "SimSun"; background: url(/zhengce/images/ty_icon.png) 3px 17px no-repeat; padding-left: 13px; }
+.relevantdoc ul li a,.fujian li a { color: #404040; }
+/*修改分享样式*/
+#proclaim { padding-top: 10px; }
+.bds_more { background-image: url(/zhengce/images/ty_share_more.png) !important; background-position: 0 !important; }
+.bds_weixin { background-image: url(/zhengce/images/ty_share_wx.png) !important; background-position: 0 !important; }
+.bds_tsina { background-image: url(/zhengce/images/ty_share_wb.png) !important; background-position: 0 !important; }
+.bds_sqq { background-image: url(/zhengce/images/ty_share_qq.png) !important; background-position: 0 !important; }
+.bds_qzone { background-image: url(/zhengce/images/ty_share_qzone.png) !important; background-position: 0 !important; }
+.bds_more:hover { background-image: url(/zhengce/images/ty_share_more_on.png) !important; opacity: initial !important; }
+.bds_weixin:hover { background-image: url(/zhengce/images/ty_share_wx_on.png) !important; background-position: 0 !important; opacity: initial !important; }
+.bds_tsina:hover { background-image: url(/zhengce/images/ty_share_wb_on.png) !important; background-position: 0 !important; opacity: initial !important; }
+.bds_sqq:hover { background-image: url(/zhengce/images/ty_share_qq_on.png) !important; background-position: 0 !important; opacity: initial !important; }
+.bds_qzone:hover { background-image: url(/zhengce/images/ty_share_qzone_on.png) !important; background-position: 0 !important; opacity: initial !important; }
+#div_div { width: 135px; margin: 0 auto 40px; }
+#qr_container { position: relative; margin: auto; }
+
+@media only screen and (max-width: 414px) {
+.box, .crumbsBox, .headerBox, .relevantdoc { width: 100%; }
+.container, .header { width: 97%; }
+.crumbs { width: 97%; height: unset; line-height: 24px; padding: 5px 0; }
+.header h1 { margin-bottom: 20px; }
+.header h1 p { font-size: 20px; line-height: 32px; }
+.doc-info li { width: 100%; }
+.othermessage { margin: 0 auto 10px; line-height: 28px; }
+.othermessage dl { display: none; }
+#proclaim { display: none; }
+.mainTextBox { width: 100%; }
+.zc_zcwj { width: auto; height: auto; padding: 10px; }
+#mainText { width: 97%; }
+#mainText p { word-wrap: break-word; margin-bottom: 10px; }
+#mainText p img { width: 100%; height: auto; }
+#mainText .TRS_Editor div { width: 100%; overflow-x: scroll; }
+}

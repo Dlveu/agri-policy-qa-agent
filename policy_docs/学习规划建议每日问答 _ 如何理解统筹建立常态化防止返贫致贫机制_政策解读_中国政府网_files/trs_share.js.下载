@@ -1,0 +1,110 @@
+var govshare = govshare || {
+  version: "1.0"
+};
+(function () {
+  var share = $('#share');
+  // var shareBox = $('#share-box', share);
+  var share_more = $('.gwds_more', share);
+  var sharePopup = $('#share-popup');
+  var close = $('b', sharePopup);
+  var title = encodeURIComponent(document.title);
+  var url = encodeURIComponent(window.location.href); //正式分享地址代码
+  // var url = encodeURIComponent('http://www.gov.cn/xinwen/2020-03/08/content_5488550.htm');  //测试分享地址
+  var shareA = $('.share-btn');
+  var list = {
+    'gwds_weixin': 'http://www.gov.cn/zgzfw/sharepage/index.html?url=' + url, //改成二维码页面最终地址
+    'gwds_tsina': 'http://service.weibo.com/share/share.php?url=' + url + "&title=" + title,
+    'gwds_qzone': 'https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + url + "&title=" + title,
+    'gwds_douban': 'https://www.douban.com/share/service?appkey=3&sharesource=weibo&title=' + title + '&url=' + url
+  }
+  var UnityFunction = {
+    init: function () {
+      this.more();
+      this.bindShare();
+    },
+    more: function () {
+      var _this = this;
+      share_more.on('mouseenter', function () {
+        sharePopup.show();
+        _this.setPosition();
+      }).on('mouseleave', function () {
+        outTimer = setTimeout(function () {
+          sharePopup.hide();
+        }, 200);
+      });
+      sharePopup.on('mouseenter', function () {
+        clearTimeout(outTimer)
+        sharePopup.show();
+      }).on('mouseleave', function () {
+        sharePopup.hide();
+      });
+      close.on('click', function () {
+        sharePopup.hide();
+      })
+    },
+    setPosition: function () {
+      var position = share.offset();
+      var winWidth = $(window).width();
+      var winHeight = $(window).height();
+
+      var left = winWidth - position.left < 350 ? 'left' : 'right';
+      var top = winHeight - position.top < 150 ? 'top' : 'bottom';
+      sharePopup.css({
+        left: (position.left + 141) + 'px',
+        top: (position.top + 28) + 'px'
+      })
+      sharePopup.removeClass().addClass(left + ' share-popup ' + top);
+
+    },
+    bindShare: function () {
+      shareA.on('click', function () {
+        var key = $(this).data('w');
+        window.open(list[key]);
+        return false
+      })
+    }
+
+  }
+  UnityFunction.init()
+})();
+
+
+(function(){
+// 为http://js.player.cntv.cn/creator/vodplayer.js
+if(trs.IsPC()){
+  return ;
+}
+if($('#myFlash').length===0){
+  return ;
+}
+function playFn(){
+
+  if($('#poster_myFlash').length>0){
+
+
+    ($('#poster_myFlash img').length>0)&&$('#poster_myFlash img').load(function(){
+
+      setTimeout(function(){
+        var naturalWidth = $('#poster_myFlash img').get(0).naturalWidth
+        var naturalHeight = $('#poster_myFlash img').get(0).naturalHeight
+        var boxWidth = $('#UCAP-CONTENT').width();
+        var boxHeight = (boxWidth*naturalHeight)/naturalWidth
+    
+        $('#html5Player-myFlash').width(boxWidth).height(boxHeight);
+        $('#myFlash').width(boxWidth).height(boxHeight);
+      },800)
+
+    });
+
+    return;
+  }
+  setTimeout(function(){
+    playFn();
+  },50)
+}
+playFn();
+
+})();
+
+
+

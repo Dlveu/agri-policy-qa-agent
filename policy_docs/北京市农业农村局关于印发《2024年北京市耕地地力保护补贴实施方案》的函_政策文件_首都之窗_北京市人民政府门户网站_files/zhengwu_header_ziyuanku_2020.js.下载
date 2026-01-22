@@ -1,0 +1,158 @@
+//-------------------------------
+//@files: 资源库头部输出文件
+//@author: ch
+//@date: 2026/1/6
+//-------------------------------
+document.writeln("<style>body,div,p,ol,ul,li,form,a,img,span,input{margin:0;padding:0;}html,body{min-width:1200px;font-family:\"Microsoft YaHei\",\"SimSun\",\"Arail\",\"Tabhoma\",sans-serif;font-size:14px;text-align:left;}@font-face{font-family:\"عرب ى\";src:url(https://www.beijing.gov.cn/images/alaboyu-20201102.ttf) format(\"truetype\");}@font-face{font-family:\"한국어\";src:url(https://www.beijing.gov.cn/images/hanyu-20201106.ttf) format(\"truetype\");}ul,ol{list-style:none;}img{border:0;vertical-align:top;}input,select,textarea{outline:0;}a{color:#000;}a:link,a:visited,a:active{text-decoration:none;}.f_hidden{display:none;visibility:hidden;}.f_clear{display:block;*zoom:1;}.f_clear::after{content:\'\';overflow:hidden;width:100%;height:0px;font-size:0px;display:block;clear:both;}.g_head_box *,.g-nav-box *,.web_map *, .g_head_box, .g-nav-box,.web_map{box-sizing: content-box;}.g_head_box{background:#bd1a2d;height: 129px;border-bottom: 1px solid #8f1322;}.g_head_box .m_head{width:1200px;margin:0 auto;position: relative;}.g_head_box .m_logo{float: left;width:325px;padding:22px 30px 0 10px;}.g_head_box .m_logo img{width:325px;height: 83px;}.g_head_box .m_search{    float: right;width: 330px;border-radius: 8px;height: 48px;margin-top: 55px;background: #fff;position: relative;}.g_head_box .m_search #keyword{-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 0;float: left;width: 240px;padding:0;height: 48px;line-height: 48px;font-size: 14px;color: #444;margin-left: 10px;}.g_head_box .m_search #searchbutton{float: right;background:#f5f5f6 url(https://www.beijing.gov.cn/images/ico_searchbtn_ch_20190924.png) center no-repeat;border: 0;height: 48px;width: 55px;cursor: pointer;border-top-right-radius: 8px;border-bottom-right-radius: 8px;}.g_head_box .m_links{position: absolute;right: 0;top: 25px;}.g_head_box .m_logo_sc{float: left;width:56px;margin-right: 20px;}.g_head_box .m_logo_sc img{width:56px;height: 58px;}.g_head_box .m-login-box{float: left;font-size: 12px;color: #fff;margin-right: 20px;}.g_head_box .m-login-box a{color:#fff;}.m-login-box b{font-weight:400;}.g_head_box .m_function .u_answering{float: left;font-size:12px;color:#fff;width: 50px;margin-left: 10px;}.g_head_box .m_version_link_box{float: left;width: 60px;position: relative;background: url(https://www.beijing.gov.cn/images/ico_down_ch_20190924.png) right center no-repeat;cursor: pointer;}.g_head_box .m_version_link_box:hover{background: url(https://www.beijing.gov.cn/images/ico_up_ch_20190924.png) right center no-repeat;}.g_head_box .m_version_link_box a,.g_head_box .m_version_link_box .m_version_link li span{width:68px !important;line-height:18px;color:#000;}.g_head_box .m_version_link li span{font-size:12px;}.g_head_box .m_version_link li a{position:absolute;font-size:0;margin:0;padding:0;height:24px;top:0;left:0;background:url(about:blank);}.g_head_box .m_version_link li .u_icon_jt, .g_head_box .m_version_link li .u_icon_ft{font-size:12px;position:static;color:#000;}.g_head_box .m_version_link_box .m_version_link li .u-korean{font-family:'한국어' !important;}.g_head_box .m_version_link li{position:relative}.g_head_box .m_version_link_box .m_version_link li .u-arab{font-family:'عرب ى' !important;}.g_head_box .m_version_link_box .m_version_link{position: absolute;left: -10px;top: 16px;z-index: 9999;width: 95px;height: auto;display: none;background: #ededed;padding: 5px 10px;}.g_head_box .m_version_link_box:hover .m_version_link{display: block;}.g_head_box .m_function{float:left;width:240px;}.g_head_box .m_function a {float:left;font-size: 12px;color: #fff;width:36px;}.g_head_box .m_function a.u_mr{margin-right: 15px;}.g-nav-box{width:100%;height:50px;background:#fff6e2;position:relative;z-index:8;}.g-nav-box .g-nav{width:1200px;margin:0 auto;overflow:hidden;}.g-nav-box li{float:left;padding:0 25px;height:50px;line-height:50px;margin:0 25px;}.g-nav-box li a{display:block;height:48px;text-align:center;font-size:24px;color:#bd1a2d;border-bottom: 2px solid transparent;}.g-nav-box li a.u-nav-select,.g-nav-box li a:hover{border-bottom: 2px solid #bd1a2d;}.g-nav .m-nav-secondary-show{display:block;}.m-nav-secondary{width:100%;background:#FFF6E2;border-bottom:1px solid #F7CE8C;position:absolute;left:0;top:60px;display:none;}.m-nav-secondary ul{margin:0 auto;}.m-nav-secondary li{font-family:\"Microsoft YaHei\";font-size:16px;width:auto;margin:0;height:40px;line-height:40px;padding:0 36px;}.m-nav-secondary li a{font-size:16px;display:inline;color:#000 !important;}.m-nav-secondary li a:hover{color:#F71501 !important;background:none;border:0;}.m-nav-secondary .u-nav-ywdt{width:1000px;}.m-nav-secondary .u-nav-zwgk{width:860px;}.m-nav-secondary .u-nav-zcwj{width:1000px;}.m-nav-secondary .u-nav-zcdx{width:560px;}.m-nav-secondary .u-nav-zmhd{width:895px;}.m-nav-secondary .u-nav-zwfw{width:1000px;}.m-nav-secondary .u-nav-rwbj{width:990px;}.u-nav-ywdt li{padding:0 30.5px;}.u-nav-zwfw li{padding:0 30px;}.u-nav-zwgk li{padding:0 28.8px;}.u-nav-zcwj li{padding:0 27.5px;}.public_nav,.login_txt_mobile{display:none}.z-none{display: none!important;}.g_head_box .m_top_head_box{display: none;}.g_head_box .m_function .u_icon_ft{width:auto;}.u_fjtline{float:left;font-size:12px;color:#fff;}.voice-draw{display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, .3);z-index:10000;}.voice-div{padding: 20px;box-sizing: border-box;width: 680px;height: 389px;background: #FFFFFF;border-radius: 10px;position: fixed;top: 0;left: 0;right: 0;bottom: 0;margin: auto;}.voice-head{text-align: right;margin-bottom: 30px;}.voice-head .voice-close{display: inline-block;width: 20px;height: 20px;background: url(\"https://www.beijing.gov.cn/images/speech/voice-close.png\") no-repeat;background-size: 100% 100%;cursor: pointer;}.voice-con{height: 100px;font-size: 24px;line-height: 32px;text-align: center;}.voice-tips-time{color: #CCCCCC;}.identify-txt{max-height: 160px;overflow-y: scroll;}.identify-txt::-webkit-scrollbar{display: none;}.voice-button{text-align: center;}.voice-button-png{display: inline-block;width: 100px;height: 100px;background: url(\"https://www.beijing.gov.cn/images/speech/voice-button-png.png\") no-repeat;background-size: 100% 100%;cursor: pointer;}.voice-button-gif{display: inline-block;width: 100px;height: 100px;background: url(\"https://www.beijing.gov.cn/images/speech/voice-button-gif.gif\") no-repeat;background-size: 100% 100%;cursor: pointer;}.noIdentify-txt, .voice-button-png{display: none;}.inp{display: flex;align-items: center;position: relative;width: fit-content;}.voiceBtn{position: absolute;width: 12px;height: 20px;background: url(\"https://www.beijing.gov.cn/images/speech/voice.png\") no-repeat;background-size: 100% 100%;left: 76%;cursor: pointer;top: 50%;margin-top: -10px;}.g_head_box .m-login-box .btn-user-center{margin-left:10px;color:#dabb85;}.g_head_box .btn-user-box .u_line{font-family:SimSun,宋体;}.g_head_box .btn-user-box{display:inline-block;}.g_head_box .btn-user-center,.g_head_box .btn-exit{text-decoration:underline!important;}.m-login-box-mobile,.m_mobile_search,.btn_map,.web_map,.m-nav-btn-home{display:none;}@media only screen and (max-width: 750px) {html,body{min-width:auto;}.g_head_box{height:4em;overflow:hidden;padding:1% 0 1%;border:0;display: flex;align-items: center;}.g_head_box .m_head{width:100%;padding: 0;overflow: hidden}.m_head .m_logo{width:180px;padding:0 0 0 2%;}.m_head .m_logo img{width:100%;height:auto;image-rendering: -webkit-optimize-contrast;image-rendering: crisp-edges;}.login_txt_pc,.m_search{display:none;}.g_head_box .m_search{float:none;width:90%;margin: 0 auto;overflow: hidden;}.g-nav-box{background:#f8f8f8;height:40px;border-bottom:2px solid #ededed;position: relative;margin-bottom:0;}.g-nav-box .g-nav{margin:0;white-space: nowrap;width:83%;overflow-y: hidden;overflow-x: auto;padding:0 2.5%;}.g-nav-box .g-nav{-webkit-overflow-scrolling: touch;scrollbar-width: none;-ms-overflow-style: none;}.g-nav-box .g-nav::-webkit-scrollbar {display: none;}.g-nav-box .g-nav.show-scrollbar::-webkit-scrollbar {display: block;height: 4px;background: rgba(0, 0, 0, 0.1);}.g-nav-box .g-nav.show-scrollbar::-webkit-scrollbar-thumb {background: rgba(0, 0, 0, 0.3);border-radius: 2px;}.g-nav-box .g-nav::after{content:\'\';width:10%;height:40px;position:absolute;right:12%;top:0;background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(248, 248, 248, 1));}.g-nav-box li{margin:0;padding:0 3%;height:40px;line-height:40px;float: none;display: inline-block;}.g-nav-box li a{font-size:16px;color:#383838;position:relative;height:auto;}.g-nav-box li a.u-nav-select, .g-nav-box li a:hover{border:0;}.g-nav-box li a.u-nav-select::after,.g-nav-box li a:hover::after{content:\'\';width:36px;height:4px;background:#ae111d;position:absolute;left:50%;bottom:-2px;transform: translateX(-50%);}.btn_map{width:12%;height: 40px;border-left:2px solid #ededed;position: absolute;right: 0;top: 0;text-align:center;display: flex;justify-content: center;align-items: center;}.btn_map img{height:1em;}.m_logo_sc,.g_head_box .u_answering,.u_ft,.u_fjtline,.u_jt,.m_version_link_box{display: none;}.g_head_box .m_links{width:58%;top:-5%;line-height: 1.5em;}#cniil_wza{text-align:center;background:url(https://www.beijing.gov.cn/images/common_wza_20251112.png) center 30% no-repeat;float:right;display: inline-block;background-size: 35%;padding-top: 30%;margin:0;font-size:12px;width: 42px;}.btn-username{margin-top: 8%;display: block;}.g_head_box .m-login-box{float:right;margin:0;text-align: center;line-height: 18px;}.g_head_box .m-login-box a.btn-login,.btn-login-mobile{display:inline-block;background:url(https://www.beijing.gov.cn/images/common_denglu_20251112.png) center 30% no-repeat;background-size: 32%;padding-top: 64%;font-size:12px;width:42px;}.g_head_box .m_function{width:auto;margin:0;float:right;}.g_head_box .m_function .m_mobile_search{display:inline-block;font-size:12px;color:#fff;float:right;background:url(https://www.beijing.gov.cn/images/common_search_20251112.png) center 30% no-repeat;background-size: 35%;padding-top: 30%;text-align:center;width: 42px;}.web_map{display:block;position: fixed;top: 0;right: 0;left: 0;width: 100%;height: 0;transition: height 0.4s ease-out;z-index: 999;overflow-y: auto;overflow-x: hidden;background:#fff;}.z_expanded{height: 100%;}.web_map_box{padding:1% 3% 7%;position:relative;overflow: hidden;}.web_map .m_head{background:#bd1a2d;padding: 15px 0;}.web_map_close{position:absolute;width:15px;right:3%;top:1%;}.web_map h3{font-size:18px;text-align:center;margin:1% 0 2%;color:#383838;}.web_map h3::after{content:\'\';height:10px;width:100%;display:block;margin:15px 0 0;background:url(https://www.beijing.gov.cn/images/common_linebg_20250609.png) 0 0 repeat-x;}.map_column_name{font-size:16px;font-weight:700;color:#383838;position:relative;}.map_column_name::before{content: \'\';display: inline-block; width: 1%; height: 20px;  background-color: #bd1a2d; margin-right: 2%;position: relative;top: 4px;border-radius:5px;}.u-korean a{font-family:'한국어'!important;}.u-arab a{font-family:'عرب ى'!important;}.map_column_content{display: flex;flex-wrap: wrap;justify-content: flex-start;margin-bottom:15px;}.map_column_content li{width: 31.333%; margin: 20px 1% 0; background-color: #f8f8f8;color:#383838;font-size:14px; border: 1px solid #ededed; box-sizing: border-box; text-align: center; padding: 10px 0;border-radius: 5px;white-space: nowrap;}.map_column_content:nth-of-type(4) li:nth-child(1){width:40%;}.map_column_content:nth-of-type(4) li:nth-child(2),.map_column_content:nth-of-type(4) li:nth-child(3){width:27%;}.m_common_gotop{width: 60px; height: 60px; background-color: #fff; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; float:right;}.m_common_gotop img{width: 1em; margin-bottom: 5px;}.m_common_gotop p{font-size: 12px; color: #333;}.login_txt_mobile{display:block;}.g_head_box .m_search #keyword{width:70%;margin-left: 1%;}.g_head_box .m_search #searchbutton{width:15%;}.public_nav{background:#bd1a2d;display: none!important;}.public_nav ul,.public_nav ol{padding:8px 0;position:relative}.public_nav ul::after{content:\'\';overflow:hidden;width:100%;height:0px;font-size:0px;display:block;clear:both}.public_nav li{width:33.333%;height:auto;float:left;font-family:'Microsoft YaHei','SimSun';box-sizing:border-box}.public_nav li p,.public_nav li a{font-size:16px;color:#FFF;text-align:center;height:36px;line-height:36px;display:block;word-wrap:normal;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;padding:0}.public_nav li p img{display:inline-block;vertical-align:top;width:10px;height:10px;margin:12px 0 0 5px;-webkit-transition:.15s;transition:.15s}.public_nav li .nav_menu{display:none;position:absolute;left:5px;right:5px;z-index:30}.public_nav li ol{background:#fff3e0;padding:8px 0 24px 0;border-radius:2px;margin-top:8px}.public_nav li ol::after{content:\"\";display:block;height:0;clear:both;visibility:hidden;font-size:0px}.public_nav li ol .nav_icon{position:absolute;width:0px;height:0px;border:8px solid transparent;border-bottom:8px solid #fff3e0;top:-15px}.public_nav li ol .nav_icon_left{left:12%}.public_nav li ol .nav_icon_middle{margin-left:50%;left:-14px}.public_nav li ol .nav_icon_right{margin-left:100%;left:-20%}.public_nav ol li{float:left;width:50%;text-align:left}.public_nav ol li a{text-align:left;color:#333;text-indent:18px}.public_nav ol li:nth-child(2){width:100%;margin:14px auto;font-weight:bold}.g_head_box .m_top_head_box{display:block;width:100%;background:#fff;height:50px;position:relative;}.m-login-box1{float:right;color:#CCCCCC;margin-right:12px;line-height:50px;}.m-login-box1 a{font-size:16px;color:#666666;padding:0 10px;}.bh{display:none;}.m_top_menu{float:right;width:108px;position:relative;overflow:visible !important;}#tab{float:left;}.english{float:left;font-size:16px;color:#666666;line-height:50px;}.m_mobile_menu_btn{float:left;margin-left:10px;}.m_mobile_menu_btn i{background-color:#bd1a2d;}.m_mobile_menu_btn .z_hover{background:transparent;}.z_cur,.z_hover{position:relative;display:inline-block;vertical-align:top;height:3px;width:25px;top:23px;}.z_cur:before,.z_cur::after,.z_hover:before,.z_hover::after{position:absolute;content:\"\";background-color:#bd1a2d;height:100%;width:100%;left:0;}.z_cur:before{transform:translateY(-250%);-webkit-transform:translateY(-250%);}.z_cur::after{transform:translateY(250%);-webkit-transform:translateY(250%);}.z_hover{background-color:transparent;}.z_hover:before{transform:translateY(0) rotate(45deg);-webkit-transform:translateY(0) rotate(45deg);}.z_hover::after{transform:translateY(0) rotate(-45deg);-webkit-transform:translateY(0) rotate(-45deg);}.m_top_menu ul{width:180px;background:#E7E7E7;padding:50px 0 30px;position:absolute;top:0;left:108px;z-index:9999; display:none;}.m_top_menu ul li{float:left;font-size:18px;width:100%;text-align:left;padding-left:23px!important;line-height:64px;}.m_top_menu ul li a{color:#bd1a2d;}.voice-div{padding:2%;width:100%;height: 289px;}.voice-con{height:80px;}.voiceBtn{left:77%;}.btn-login-mobile{display: inline-block!important;}}</style>");
+document.writeln("<script src=\'https://www.beijing.gov.cn/images/jquery.js\'></script>");
+document.writeln("<script src=\'https://www.beijing.gov.cn/images/jquery-migrate.min.js\'></script>");
+document.writeln("<div class=\"g_head_box\"><div class=\"m_head\"><div class=\"m_logo\"><a href=\"https://www.beijing.gov.cn/\" target=\"_blank\"><img src=\"https://www.beijing.gov.cn/images/logo_ch_20191009.png\" alt=\"首都之窗-北京市人民政府\"></a></div><div class=\"m_search\"><form id=\"search\" method=\"get\" name=\"searchForm\" action=\"\"><input name=\"database\" type=\"hidden\" id=\"database\" value=\"bj\"><input type=\"text\" id=\"keyword\" name=\"temp\" value=\"\" title=\"搜索关键词\" onfocus=\"clearInput(this)\" onblur=\"returnInput(this)\"><a class=\"voiceBtn\" href=\"javascript:void(0)\" title=\"语音搜索\"></a><input id=\"searchbutton\" type=\"submit\" title=\"点击搜索\" alt=\"搜索\" value=\"\"></form></div><div class=\"m_links\"><div class=\"m-login-box\"><a class=\"btn-login\" href=\"https://www.beijing.gov.cn/hudong/yonghu/uSpace\" title=\"用户登录\"><b class=\"login_txt_pc\">用户登录</b><b class=\"login_txt_mobile\">登录</b></a><span class=\"btn-username z-none\"></span><div class=\"btn-user-box z-none\"><a class=\"btn-user-center\" href=\"https://bjt.beijing.gov.cn/renzheng/open/login/goUserLogin?client_id=100100001058&redirect_uri=https://banshi.beijing.gov.cn/bjspacenew/web/login/sso/person/in&response_type=code&scope=user_info&state=\" title=\"\" target=\"_blank\"><b class=\"login_txt_pc\">进入我的</b>专属空间</a><span class=\"u_line\"> &gt; </span><a class=\"btn-exit \" href=\"javascript:logout();\" title=\"\" >退出</a></div></div><div class=\"m_function\"><a id=\"cniil_wza\" class=\"u_mr\" href=\"javascript:;\" title=\"无障碍\">无障碍</a><a class=\"m_mobile_search\" href=\"https://www.beijing.gov.cn/so/?siteCode=1100000088&tab=all\">搜索</a><span class=\"u_ft\"><a class=\"u_icon_ft\" href=\"https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/index.html\" title=\"繁体版\" target=\"_blank\">繁体</a></span><span class=\"u_fjtline\">/</span><span class=\"u_jt\"><a class=\"u_icon_jt\" href=\"https://www.beijing.gov.cn/\" title=\"简体版\" target=\"_blank\">简体</a></span><div class=\"m_version_link_box\"><a class=\"u_icon_en\" href=\"http://english.beijing.gov.cn/\" title=\"English Version\" target=\"_blank\">ENGLISH</a><ul class=\"m_version_link\"><li><span class=\"u-korean\">한국어</span><a href=\"http://korean.beijing.gov.cn/\" title=\"韩语版\" target=\"_blank\">韩语版</a></li><li><span>日本語</span><a href=\"http://japanese.beijing.gov.cn/\" title=\"日语版\" target=\"_blank\">日语版</a></li><li><span>DEUTSCH</span><a href=\"http://german.beijing.gov.cn/\" title=\"德语版\" target=\"_blank\">德语版</a></li><li><span>FRANÇAIS</span><a href=\"http://french.beijing.gov.cn/\" title=\"法语版\" target=\"_blank\">法语版</a></li><li><span>РУССКИЙ ЯЗЫК</span><a href=\"http://russian.beijing.gov.cn/\" title=\"俄语版\" target=\"_blank\">俄语版</a></li><li><span>ESPAÑOL</span><a href=\"http://spanish.beijing.gov.cn/\" title=\"西班牙语版\" target=\"_blank\">西班牙语版</a></li><li><span class=\"u-arab\">العربية</span><a href=\"http://arabic.beijing.gov.cn/\" title=\"阿拉伯语版\" target=\"_blank\">ا阿拉伯语版</a></li><li><span class=\"u-arab\">PORTUGUÊS</span><a href=\"https://portuguese.beijing.gov.cn\" title=\"葡萄牙语版\" target=\"_blank\">葡萄牙语版</a></li></ul></div><a class=\"u_answering\" href=\"https://www.beijing.gov.cn/jj/\" target=\"_blank\" title=\"智能问答\">智能问答</a></div></div></div></div></div><div class=\"g-nav-box\"><ul class=\"g-nav f_clear\"><li class=\"m-nav-btn\"><a class=\"u-nav-links\" href=\"https://www.beijing.gov.cn/ywdt/\" title=\"要闻动态\" target=\"_blank\">要闻动态</a></li><li class=\"m-nav-btn\"><a class=\"u-nav-links\" href=\"https://www.beijing.gov.cn/gongkai/\" title=\"政务公开\" target=\"_blank\">政务公开</a></li><li class=\"m-nav-btn\"><a class=\"u-nav-links\" href=\"https://banshi.beijing.gov.cn/\" title=\"政务服务\" target=\"_blank\">政务服务</a></li><li class=\"m-nav-btn\"><a class=\"u-nav-links\" href=\"https://www.beijing.gov.cn/zhengce/\" title=\"政策服务\" target=\"_blank\">政策服务</a></li><li class=\"m-nav-btn\"><a class=\"u-nav-links\" href=\"https://www.beijing.gov.cn/hudong/\" title=\"政民互动\" target=\"_blank\">政民互动</a></li><li class=\"m-nav-btn\"><a class=\"u-nav-links\" href=\"https://www.beijing.gov.cn/renwen/\" title=\"人文北京\" target=\"_blank\">人文北京</a></li></ul><div class=\"btn_map\"><img src=\"https://www.beijing.gov.cn/images/common_more_20250609.png\"/></div></div><div class=\"web_map\"><div class=\"web_map_box\"><img class=\"web_map_close\" src=\"https://www.beijing.gov.cn/images/common_close_20250609.png\"><h3>网站地图</h3><div class=\"map_column_name\">要闻动态</div><ul class=\"map_column_content\"><li><a href=\"https://www.beijing.gov.cn/ywdt/dzyjs/\">党中央精神</a></li><li><a href=\"http://www.gov.cn/pushinfo/v150203/index.htm\">国务院信息</a></li><li><a href=\"https://www.beijing.gov.cn/ywdt/zybwdt/\">中央部委动态</a></li><li><a href=\"https://www.beijing.gov.cn/ywdt/yaowen/\">北京要闻</a></li><li><a href=\"https://www.beijing.gov.cn/ywdt/hyxx/\">会议信息</a></li><li><a href=\"https://www.beijing.gov.cn/ywdt/gzdt/\">部门动态</a></li><li><a href=\"https://www.beijing.gov.cn/ywdt/gqrd/\">各区热点</a></li></ul><div class=\"map_column_name\">政务公开</div><ul class=\"map_column_content\"><li><a href=\"https://www.beijing.gov.cn/gongkai/sld/\">市领导</a></li><li><a href=\"https://www.beijing.gov.cn/gongkai/zfxxgk/fdzdgknr/jgzn/\">机构职能</a></li><li><a href=\"https://www.beijing.gov.cn/zhengce/\">政策服务</a></li><li><a href=\"https://zhengce.beijing.gov.cn/\">政策兑现</a></li><li><a href=\"https://www.beijing.gov.cn/so/zcdh/zcjd\">政策解读</a></li><li><a href=\"https://www.beijing.gov.cn/gongkai/hygq/\">回应关切</a></li><li><a href=\"https://www.beijing.gov.cn/ywdt/bjszfcwhy/\">决策公开</a></li><li><a href=\"https://www.beijing.gov.cn/gongkai/gkzt/\">专题公开</a></li></ul><div class=\"map_column_name\">政务服务</div><ul class=\"map_column_content\"><li><a href=\"https://banshi.beijing.gov.cn/bjzw/grfw.html?serviceObject=1001&servicePlaceId=110000000000\">个人服务</a></li><li><a href=\"https://banshi.beijing.gov.cn/bjzw/frfw.html?serviceObject=1002&servicePlaceId=110000000000\">法人服务</a></li><li><a href=\"https://banshi.beijing.gov.cn/bjzw/bmfw.html?serviceObject=1003&servicePlaceId=110000000000\">部门服务</a></li><li><a href=\"https://www.beijing.gov.cn/fuwu/bmfw/\">便民服务</a></li><li><a href=\"https://www.beijing.gov.cn/fuwu/lqfw/\">利企服务</a></li><li><a href=\"http://tzxm.beijing.gov.cn\">投资项目</a></li><li><a href=\"http://zjfw.beijing.gov.cn/?servicePlaceId=18\">中介服务</a></li><li><a href=\"https://banshi.beijing.gov.cn/bjzw/ygzw.html?servicePlaceId=110000000000\">阳光政务</a></li></ul><div class=\"map_column_name\">政民互动</div><ul class=\"map_column_content\"><li><a href=\"https://www.beijing.gov.cn/hudong/hdjl/sindex/hdjl-yhxz-ts.html\">12345网上接诉即办</a></li><li><a href=\"https://www.beijing.gov.cn/jj/\">我要咨询</a></li><li><a href=\"https://www.beijing.gov.cn/hudong/hdjl/sindex/hdjl-yhxz-jy.html\">我要建议</a></li><li><a href=\"https://www.beijing.gov.cn/hudong/wsdc/\">参与调查</a></li><li><a href=\"https://www.beijing.gov.cn/shipin/\">在线访谈</a></li><li><a href=\"https://www.beijing.gov.cn/hudong/tushuo/\">图说互动</a></li></ul><div class=\"map_column_name\">人文北京</div><ul class=\"map_column_content\"><li><a href=\"https://www.beijing.gov.cn/renwen/bjgk/\">北京概况</a></li><li><a href=\"https://www.beijing.gov.cn/renwen/bjgk/xzqh/\">十六区概览</a></li><li><a href=\"https://www.beijing.gov.cn/so/zcdh/cshd\">文化活动</a></li><li><a href=\"https://www.beijing.gov.cn/so/zcdh/rwdw\">设施场所</a></li><li><a href=\"https://www.beijing.gov.cn/renwen/zt/\">古韵北京</a></li><li><a href=\"https://www.beijing.gov.cn/renwen/zt/stbj/\">绿色北京</a></li><li><a href=\"https://www.beijing.gov.cn/tsbj/\">图说北京</a></li></ul><div class=\"map_column_name\">多语种</div><ul class=\"map_column_content\"><li><a href=\"http://english.beijing.gov.cn/\" target=\"_blank\">ENGLISH</a></li><li class=\"u-korean\"><a href=\"http://korean.beijing.gov.cn/\" target=\"_blank\">한국어</a></li><li><a class=\"m_aYuzhong\" href=\"http://japanese.beijing.gov.cn/\" target=\"_blank\">日本語</a></li><li><a class=\"m_aYuzhong\" href=\"http://german.beijing.gov.cn/\" target=\"_blank\">DEUTSCH</a></li><li><a class=\"m_aYuzhong\" href=\"http://french.beijing.gov.cn/\" target=\"_blank\">FRANÇAIS</a></li><li><a class=\"m_aYuzhong\" href=\"http://russian.beijing.gov.cn/\" target=\"_blank\">РУССКИЙ ЯЗЫК</a></li><li><a class=\"m_aYuzhong\" href=\"http://spanish.beijing.gov.cn/\" target=\"_blank\">ESPAÑOL</a></li><li class=\"u-arab\"><a class=\"m_aYuzhong\" href=\"http://arabic.beijing.gov.cn/\" target=\"_blank\">العربية</a></li><li><a href=\"https://portuguese.beijing.gov.cn\" target=\"_blank\">PORTUGUÊS</a></li></ul><div class=\"m_common_gotop\"><img src=\"https://www.beijing.gov.cn/images/common_gotop_20250609.png\"/><p>回到顶部</p></div></div></div><div class=\"voice-draw\"><div class=\"voice-div\"><div class=\"voice-head\"><span class=\"voice-close\"></span></div><div class=\"voice-con\"><div class=\"init-txt\"><span class=\"voice-tips-txt\">我在听，请说话</span><span class=\"voice-tips-time\">(10s)</span></div><div class=\"noIdentify-txt\"><span class=\"voice-tips-txt\">抱歉，没听清，请再说一遍吧</span></div><div class=\"identify-txt\"><span class=\"voice-tips-txt\" id=\"voice-search-result\"></span></div></div><div class=\"voice-button\"><span class=\"voice-button-png\" id=\"btn_control\"></span><span class=\"voice-button-gif\"></span></div></div></div>");
+document.writeln("<script src=\'https://www.beijing.gov.cn/images/menu_ziyuanku.js\'></script>");
+document.writeln("<script src=\'https://www.beijing.gov.cn/hudong/yonghu/js/front/hdSyn.min.js\'></script>");
+document.writeln("<script src=\'https://www.beijing.gov.cn/images/speech/speech.umd.js\'></script>");
+document.writeln("<script src=\'https://www.beijing.gov.cn/images/speech/speech.js\'></script>");
+//站内搜索
+function znForm(){
+    var temp = searchForm.temp.value;
+    var url = "https://www.beijing.gov.cn/so/s?tab=all&siteCode=1100000088&qt="+encodeURIComponent(temp);
+    if(temp == null || temp=="" || temp == "全文搜索"){
+        //window.open("/so");
+        alert("请输入您想要搜索的内容");
+        return false;
+    }
+    else{
+        window.open(url);
+    }
+    return false;
+}
+//京京搜索
+function jjForm(){
+    var temp = searchForm.temp.value;
+    var database = searchForm.database.value;
+    var url = "https://www.beijing.gov.cn/jj?question="+encodeURIComponent(temp)+"&database1="+encodeURIComponent(database);
+    if(temp==null || temp=="" || temp=="智能搜索"){
+        window.open("https://www.beijing.gov.cn/jj");
+    }else{
+        window.open(url);
+    }
+    return false;
+}
+//政策搜索
+function zcForm(){
+    var temp = searchForm.temp.value;
+    var database = searchForm.database.value;
+    var url = "https://www.beijing.gov.cn/zhengce/wenjian/jiansuo/searchForZhengCe?ZCYW_XXMC="+encodeURIComponent(temp);
+    if(temp==null || temp=="" || temp== "政策搜索"){
+        window.open("https://www.beijing.gov.cn/zhengce/wenjian/jiansuo/searchForZhengCe"); 
+    }else{
+        window.open(url);
+    }
+    return false;
+}
+//文本输入框
+function clearInput(node){
+    if(!node){return;}
+    if(node.value == node.defaultValue){node.value = "";}
+}
+function returnInput(node){
+    if(!node){return;}
+    if(node.value == ""){node.value = node.defaultValue;}
+}
+// 设置为主页
+function SetHome(obj, vrl) {
+    try {
+        obj.style.behavior = 'url(#default#homepage)';
+        obj.setHomePage(vrl);
+    } catch (e) {
+        if (window.netscape) {
+            try {
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            } catch (e) {
+                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+            }
+            var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+            prefs.setCharPref('browser.startup.homepage', vrl);
+        } else {
+            alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入：" + vrl + "点击确定。");
+        }
+    }
+}
+// 加入收藏 兼容360和IE6
+function shoucang(sTitle, sURL) {
+    try {
+        window.external.addFavorite(sURL, sTitle);
+    } catch (e) {
+        try {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        } catch (e) {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+};
+//显示网站地图
+document.addEventListener('DOMContentLoaded', function() {
+    // 展开：切换 z_expanded 类
+    var buttons = document.querySelectorAll('.btn_map');
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        var webMaps = document.querySelectorAll('.web_map');
+        webMaps.forEach(function(webMap) {
+          webMap.classList.toggle('z_expanded');
+        });
+      });
+    });
+  
+    // 收起：点击关闭按钮时移除类
+    var closeButton = document.querySelector('.web_map_close');
+    if (closeButton) {
+      closeButton.addEventListener('click', function() {
+        var webMaps = document.querySelectorAll('.web_map');
+        webMaps.forEach(function(webMap) {
+          webMap.classList.remove('z_expanded');
+        });
+      });
+    }
+  });
+//顶部滚动条
+const observer = new MutationObserver((mutations) => {
+    const scrollBox = document.querySelector('.g-nav-box .g-nav');
+    if (scrollBox) {
+      initScrollbar(scrollBox); // 初始化滚动条逻辑
+      observer.disconnect();
+    }
+  });
+  // 开始监听整个文档
+  observer.observe(document.body, { childList: true, subtree: true });
+  // 滚动条逻辑封装
+  function initScrollbar(scrollBox) {
+    let scrollTimeout;
+    const SHOW_SCROLLBAR_CLASS = 'show-scrollbar';
+    const HIDE_DELAY = 500;
+    const showScrollbar = () => {
+      scrollBox.classList.add(SHOW_SCROLLBAR_CLASS);
+      clearTimeout(scrollTimeout);
+    };
+    const hideScrollbar = () => {
+      scrollTimeout = setTimeout(() => {
+        scrollBox.classList.remove(SHOW_SCROLLBAR_CLASS);
+      }, HIDE_DELAY);
+    };
+    // 绑定事件
+    scrollBox.addEventListener('touchstart', showScrollbar);
+    scrollBox.addEventListener('touchmove', showScrollbar);
+    scrollBox.addEventListener('touchend', hideScrollbar);
+  }
+//顶部滚动条
+//返回顶部
+document.addEventListener('DOMContentLoaded', function() {
+const gotopButton = document.querySelector('.m_common_gotop');
+if (gotopButton) {
+    gotopButton.addEventListener('click', function() {
+    const webMap = document.querySelector('.web_map');
+    if (webMap) {
+        webMap.scrollTop = 0; // 将滚动条重置到顶部
+    }
+    });
+}
+});
+  

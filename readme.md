@@ -1,0 +1,10 @@
+  - Python : 3.10.19
+  - pydantic: 2.12.5
+  - streamlit: 1.53.0
+  - langchain_openai: 1.1.7
+  - langchain_core: 1.2.7
+  - langgraph: 1.0.6
+  - langchain_community: 0.4.1
+  - faiss-cpu: 1.13.2
+  - python-dotenv: 1.2.1
+  - beautifulsoup4: 4.14.3

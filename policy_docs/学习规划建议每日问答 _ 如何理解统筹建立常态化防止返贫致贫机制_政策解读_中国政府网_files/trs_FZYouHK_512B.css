@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "FZYouHK_512B";
+    src: url(FZYouHK_512B.eot); /* IE9 */
+    src: url(FZYouHK_512B.eot?#iefix) format("embedded-opentype"), /* IE6-IE8 */
+    url(FZYouHK_512B.woff) format("woff"), /* chrome, firefox */
+    url(FZYouHK_512B.ttf) format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url(FZYouHK_512B.svg#FZYouHK_512B) format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}

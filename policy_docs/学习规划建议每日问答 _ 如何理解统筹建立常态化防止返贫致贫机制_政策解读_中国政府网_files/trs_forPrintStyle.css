@@ -1,0 +1,382 @@
+@font-face {
+  /* 仿宋_GB2312字体 */
+  font-family:"fangsong_GB2312";
+  src:url("./font/fangsong_GB2312.ttf") format("truetype"); /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* 隐藏头部框 */
+.pctoubukuang1:empty{display: none;}
+.printing .pctoubukuang1{page-break-inside: avoid;}
+
+/* 为了logo与上沿距离近些 */
+.printing .header{height: 50px !important;}
+.printing .header > .container > .padding{height: 50px !important;}
+.printing .header_logo{top:0px !important;}
+
+.printing .header{border-bottom:2px solid #2e5586;margin-bottom:2px;}
+.printing .header_search{visibility: hidden;}
+.printing .header_toolbar{visibility: hidden;}
+
+.printing .footer_r{display: none;}
+.printing .footer{height:140px;}
+/* .printing .footer_dzjg{padding-top:28px;padding-bottom:0px;} */
+.printing .footer_wrap{border-top:3px #2e5586 solid;margin-top:2px;height:108px;page-break-inside: avoid;}
+/* .printing .barrierFree20231007{display: none;} */
+/* 针对底部外链 */
+.printing .footer_links{display: none;border-bottom:0 !important;}
+
+.printing .content{width:auto;}
+
+/* 针对 相关文件 板块 */
+.printing .related{display: none;}
+
+/* 细览页二维码 */
+.printing #div_div{page-break-inside: avoid;}
+
+
+
+
+
+
+
+.printing .pages_content{line-height: 1.4;word-break: break-word;/* width: 880px; */box-sizing: border-box;margin:0 auto;text-align: justify;
+width:886px;/*统一顶部对齐*/
+}
+.printing .pages_content p *{font-size:inherit !important;;}
+
+.printing .oneColumn.pub_border{padding: 10px 0 66px;width: 950px;}
+
+.printing strong{text-shadow: 0 0 #333;}
+.printing b{text-shadow: 0 0 #333;}
+.printing [style*='font-weight: bold']{text-shadow: 0 0 #333;}
+
+.printing .pages-date{text-align: center;font-size:22px !important;height:50px;border-bottom:2px solid #dcdcdc;}
+.printing .printing_none{display: none !important;}
+.printing .noneBorder{border-width:0px !important;}
+
+.printing .BreadcrumbNav{visibility: hidden;}
+.printing .BreadcrumbNav{display:none;}/* */ 
+.printing .pages_print{visibility: hidden;}
+
+.printing .editor{display:none;}
+.printing .footer_nav{display:none;}
+
+/*.printing .pageInfo{display:none;}  */
+
+.printing .back_top{display: none !important;}
+
+.printing .policyLibraryOverview_content .pages_content {
+padding:0 12px;
+width: 880px;margin-top:85px;
+/* border-right:1px solid #f00;
+border-left:1px solid #f00; */
+/* margin-left:40px */
+}
+
+
+
+/*  */
+#UCAP-CONTENT-FORPRINT p{position:relative;}
+/* 用它包着图片 */
+#UCAP-CONTENT-FORPRINT .imgParentEle{position:relative;display: block;}
+.page-break-inside{page-break-inside:avoid;}
+/* #UCAP-CONTENT-FORPRINT .imgParentEle>img{position:absolute;} */
+
+/* 针对正文中有自定义table时显示有问题 */
+#UCAP-CONTENT-FORPRINT table{width:auto !important;}
+
+/* 针对 嵌套 解读 细览页面下面一个深色背景的盒子 */
+.printing .jiedu-blk{display: none;}
+
+
+
+/* .printing .content{position:relative;left:50%;margin-left:-610px;} */
+
+
+.locationHref{display: none;word-break: break-word;}
+.printing .locationHref{display: block;}
+/* .printing.printingFontSizeDefault .article{font-size:29px !important;}
+.printing.printingFontSizeBig .article{font-size:34px !important;}
+.printing.printingFontSizeBigger .article{font-size:36px !important;} */
+
+
+.docImgEleO{display: none;}
+
+.docImgEleO+*[style*='font-family: 宋体, SimSun; color: rgb(0, 0, 255)'],
+.docImgEleO+*[style*='color: rgb(0, 0, 255)']{display: none;}
+
+.docImgEleO+*>*[style*='font-family: 宋体, SimSun; color: rgb(0, 0, 255)'],
+.docImgEleO+*>*[style*='color: rgb(0, 0, 255)']{display: none;}
+
+.docImgEleO+*+*>*[style*='font-family: 宋体, SimSun; color: rgb(0, 0, 255)'],
+.docImgEleO+*+*>*[style*='color: rgb(0, 0, 255)']{display: none;}
+
+.docImgEleO+*+*+*>*[style*='font-family: 宋体, SimSun; color: rgb(0, 0, 255)'],
+.docImgEleO+*+*+*>*[style*='color: rgb(0, 0, 255)']{display: none;}
+
+
+/* 针对 信息公开_国务院文件 细览 */
+/* .printing.XXGK_GWYWJ .header{height: 50px !important;}
+.printing.XXGK_GWYWJ .header > .container > .padding{height: 50px !important;}
+.printing.XXGK_GWYWJ .header_logo{top:0px !important;} */
+.printing.XXGK_GWYWJ .sj_index_box{padding:.1px 6px 0px;}
+.printing.XXGK_GWYWJ .mxxgkwrap_gwywj{width:auto;}
+.printing.XXGK_GWYWJ .sj_container{/* width:950px !important; */
+width: auto !important;
+}
+.printing.XXGK_GWYWJ .pages_content{/* width:940px !important; */padding: 15px 55px 0px 55px;width:auto !important;box-sizing:border-box;line-height: 2;}
+.printing.XXGK_GWYWJ .table2{width:auto !important;box-sizing:border-box;}
+/* .printing.XXGK_GWYWJ .table2 td{padding:0 30px;box-sizing:border-box;} */
+.printing.XXGK_GWYWJ .bd1{width:100% !important;margin:0 auto;}
+.printing.XXGK_GWYWJ .w90{width:120px;}
+.printing.XXGK_GWYWJ .w340{width:auto;}
+
+/* 头部框 */
+.printing.XXGK_GWYWJ .pctoubukuang1{font-size:22px !important;width:840px;margin:0 auto;padding:40px 0;overflow: hidden;}
+.printing.XXGK_GWYWJ .pctoubukuang1 *{font-size:22px !important;box-sizing: border-box;}
+.printing.XXGK_GWYWJ .pctoubukuang1 .border-table{border:2px solid #ddd;}
+.printing.XXGK_GWYWJ .pctoubukuang1 .bd1 td{box-sizing: border-box;}
+.printing.XXGK_GWYWJ .pctoubukuang1 .bd1 tr td:nth-child(1){width:16%;padding-left:15px;}
+.printing.XXGK_GWYWJ .pctoubukuang1 .bd1 tr td:nth-child(2){width:35%;}
+.printing.XXGK_GWYWJ .pctoubukuang1 .bd1 tr td:nth-child(3){width:16%;padding-left:15px;}
+
+
+/* 去掉底部 */
+.printing.XXGK_GWYWJ .footer_wrap{display:none !important;height:0 !important;line-height:0 !important;font-size:0 !important;margin:0 !important;padding:0 !important;overflow: hidden !important;}
+.printing.XXGK_GWYWJ .wrap{padding-bottom:0px !important;}
+
+
+
+/* 针对 政策_国务院部门文件细览 */
+/* .printing.ZC_GWYBMWJ .header{height: 50px !important;}
+.printing.ZC_GWYBMWJ .header > .container > .padding{height: 50px !important;}
+.printing.ZC_GWYBMWJ .header_logo{top:0px !important;} */
+
+.printing.ZC_GWYBMWJ .pages_content{line-height: 2;}
+
+.printing.ZC_GWYBMWJ .pctoubukuang1{/* margin: 0 15px 21px; */margin: 40px auto;width:840px;border: 2px dashed #a4a4a4;box-sizing: border-box;}
+/* 头部框 */
+/* 在非打印状态下要保留头部框的原有样式 */
+.ZC_GWYBMWJ .pctoubukuang1 tr td:nth-child(1){width:8%;}
+.ZC_GWYBMWJ .pctoubukuang1 tr td:nth-child(2){width:42%;}
+.ZC_GWYBMWJ .pctoubukuang1 tr td:nth-child(3){width:8%;}
+
+.printing.ZC_GWYBMWJ .pctoubukuang1{font-size:22px !important;}
+.printing.ZC_GWYBMWJ .pctoubukuang1 *{font-size:22px !important;box-sizing: border-box;}
+
+
+.printing.ZC_GWYBMWJ .pctoubukuang1 td{box-sizing: border-box;border-bottom:2px dashed #a4a4a4;}
+.printing.ZC_GWYBMWJ .pctoubukuang1 tr td:nth-child(1){width:16%;padding-left:15px;}
+.printing.ZC_GWYBMWJ .pctoubukuang1 tr td:nth-child(2){width:35%;}
+.printing.ZC_GWYBMWJ .pctoubukuang1 tr td:nth-child(3){width:16%;padding-left:15px;}
+.printing.ZC_GWYBMWJ .pctoubukuang1 tr:last-child td{border-width: 0;}
+
+.printing.ZC_GWYBMWJ .policyLibraryOverview_gwy_bmwj{padding-bottom:0 !important;}
+/* 去掉底部 */
+.printing.ZC_GWYBMWJ .footer_wrap{display:none !important;height:0 !important;line-height:0 !important;font-size:0 !important;margin:0 !important;padding:0 !important;overflow: hidden !important;}
+.printing.ZC_GWYBMWJ .wrap{padding-bottom:0px !important;}
+
+
+
+/* 针对 政策_行政法规库细览 */
+/* .printing.ZCXZFGK .header{height: 50px !important;}
+.printing.ZCXZFGK .header > .container > .padding{height: 50px !important;}
+.printing.ZCXZFGK .header_logo{top:0px !important;} */
+.printing.ZCXZFGK .padd_xzfgk{width: 950px;box-sizing:border-box;margin:0 auto;border-width: 0;}
+.printing.ZCXZFGK .padd_xzfgk .pages_content{/* width:800px; */width: 100%;box-sizing:border-box;margin:0 auto;}
+.printing.ZCXZFGK .padd_xzfgk .editor{width:800px;}
+.printing.ZCXZFGK .padd_xzfgk .oneColumn{width:auto;}
+.printing.ZCXZFGK .oneColumn_xzfgk{padding:0 !important;width:836px;}
+.printing.ZCXZFGK .bottom_xzfgk{padding-bottom: 0;}
+.printing.ZCXZFGK .addBgColor{padding:30px 0 0;width:886px;margin:0 auto;}
+
+.printing.ZCXZFGK .oneColumn_xzfgk #div_div {margin: 50px auto 68px;}
+/* 去掉底部 */
+/* .printing.ZCXZFGK .footer_wrap{display:none !important;height:0 !important;line-height:0 !important;font-size:0 !important;margin:0 !important;padding:0 !important;overflow: hidden !important;}
+.printing.ZCXZFGK .wrap{padding-bottom:0px !important;} */
+
+/* 针对 国务院公报细览 */
+/* .printing.GWYGBXL .header{height: 50px !important;}
+.printing.GWYGBXL .header > .container > .padding{height: 50px !important;}
+.printing.GWYGBXL .header_logo{top:0px !important;} */
+
+.printing.GWYGBXL .gwy_gb{width:950px !important;padding-bottom:0px !important;}
+.printing.GWYGBXL .pages_content{width:auto !important;}
+.printing.GWYGBXL .oneColumn.oneColumn_gwygb{padding-top:50px !important;padding-bottom:0 !important;width: 892px !important;}
+/* 去掉底部 */
+.printing.GWYGBXL .footer_wrap{display:none !important;height:0 !important;line-height:0 !important;font-size:0 !important;margin:0 !important;padding:0 !important;overflow: hidden !important;}
+.printing.GWYGBXL .wrap{padding-bottom:0px !important;}
+
+
+/* 政策文件库_国务院文件细览 */
+.printing.ZCWJK_GWYWJ .sj_container{width:950px !important;}
+.printing.ZCWJK_GWYWJ .pages_content{width:940px !important;}
+.printing.ZCWJK_GWYWJ .bd1{width:880px;margin:0 auto;}
+.printing.ZCWJK_GWYWJ .w90{width:120px;}
+.printing.ZCWJK_GWYWJ .w340{width:auto;}
+.printing.ZCWJK_GWYWJ .wrap{padding-bottom:1px;}/*减少二维码与footer距离*/
+
+
+/* 针对 细览_国情（二级栏目） */
+.printing.XL_GQ_EJLM .pub_border{border-width:0;padding:10px 0 80px !important;}
+.printing.XL_GQ_EJLM .padd{padding: 0 0px 0px 0px !important;}
+.printing.XL_GQ_EJLM .article.oneColumn{
+width: 887px !important;
+/*margin-left:0;
+margin-left:86px*/margin:0 auto;
+}
+
+
+/* 针对 中央有关文件_细览 */
+/* .printing.ZYYGWJ .header{height: 50px !important;}
+.printing.ZYYGWJ .header > .container > .padding{height: 50px !important;}
+.printing.ZYYGWJ .header_logo{top:0px !important;} */
+.printing.ZYYGWJ .oneColumn{padding-top:56px !important;padding-bottom:0 !important;}
+.printing.ZYYGWJ .pages_content{line-height: 2;}
+
+/* 去掉底部 */
+.printing.ZYYGWJ .footer_wrap{display:none !important;height:0 !important;line-height:0 !important;font-size:0 !important;margin:0 !important;padding:0 !important;overflow: hidden !important;}
+.printing.ZYYGWJ .wrap{padding-bottom:0px !important;}
+
+
+/* 针对 政策_公报_历史公报细览 */
+/* .printing.ZC_GB_LSGBXL .header{height: 50px !important;}
+.printing.ZC_GB_LSGBXL .header > .container > .padding{height: 50px !important;}
+.printing.ZC_GB_LSGBXL .header_logo{top:0px !important;} */
+
+/* .printing.ZC_GB_LSGBXL .oneColumn{padding-bottom:0 !important;} */
+/* 去掉底部 */
+/* .printing.ZC_GB_LSGBXL .footer_wrap{display:none !important;height:0 !important;line-height:0 !important;font-size:0 !important;margin:0 !important;padding:0 !important;overflow: hidden !important;}
+.printing.ZC_GB_LSGBXL .wrap{padding-bottom:0px !important;} */
+
+
+/* 20230601针对二维码距底部间距过大和两边宽度不统一 */
+/* .printingFontSizeDefault .gwy_gb,
+.printingFontSizeBig .gwy_gb,
+.printingFontSizeBigger .gwy_gb */
+.printingFontSizeDefault .wrap, .printingFontSizeBig .wrap, .printingFontSizeBigger .wrap {
+padding-bottom:0;
+}
+
+.printingFontSizeDefault .oneColumn.oneColumn_gwygb, .printingFontSizeBig .oneColumn.oneColumn_gwygb, .printingFontSizeBigger .oneColumn.oneColumn_gwygb {
+width: auto;
+padding: 10px 33px 50px;
+border: 1px #ddd solid;
+margin-left: -25px;
+}
+/*继上追加修改*/
+/*国务院文件*/
+/* .printing .table2{
+width:100%!important;
+} */
+
+/*政策解读、图解、中央有关文件、国务院公报（1954-1999）*/
+/* .printing .article.oneColumn{
+width: 888px !important;
+margin-left:0;
+margin-left:28px
+} */
+
+
+
+.printing .mxxgkwrap_gwywj{
+width:892px;
+}
+
+
+
+/*0605*/
+
+
+
+/* .printing .table2 {
+width: 880px!important;
+} */
+
+.printing .mxxgkwrap_gwywj {
+margin-top: 30px;
+}
+
+.printing .mxxgkwrap_gwywj .bd1 td b{text-shadow:0.15pt 0px 0px #333333,0.25pt 0px 0px #333333,0.35pt 0px 0px #333333,-0.25pt 0px 0px #333333,0px 0.25pt 0px #333333,0px -0.25pt 0px #333333;}
+
+/* 
+注释于20230821.1531 这里是头部框  老style，应该注掉
+.printing .policyLibraryOverview_header table th:nth-child(odd) {
+width:10%!important;
+}
+.printing .policyLibraryOverview_header table th:nth-child(even) {
+width:46%!important;
+}
+
+.printing .policyLibraryOverview_header table td:nth-child(odd) {
+text-shadow:0.15pt 0px 0px #333333,0.25pt 0px 0px #333333,0.35pt 0px 0px #333333,-0.25pt 0px 0px #333333,0px 0.25pt 0px #333333,0px -0.25pt 0px #333333;
+}
+
+.printing .policyLibraryOverview_content .policyLibraryOverview_header {
+margin-top:30px;
+} */
+/* .printing .policyLibraryOverview_content .pages_content {
+
+} */
+.printing .content {
+width: 1050px;
+}
+.printing .article.oneColumn {
+margin: 0 auto;width: 888px !important;
+border: 0;
+}
+
+
+/* 火狐 */
+@-moz-document url-prefix(){
+
+  .printing h1{font-size:44px;}
+  .printing .pages_content{width:auto;}
+  .printing .article.oneColumn{width:auto !important;}
+  .printing .oneColumn{padding: 30px 0px 80px;}
+
+  /*  */
+  #UCAP-CONTENT-FORPRINT p{letter-spacing:1px;}
+
+  /* 针对正文中有自定义table时显示有问题 */
+  #UCAP-CONTENT-FORPRINT table{width: 90% !important;box-sizing: border-box;}
+  #UCAP-CONTENT-FORPRINT table td{width:auto !important;border-width:4px !important;}
+  /* #UCAP-CONTENT-FORPRINT table td[style*='border-bottom:1.0000pt']{border-bottom-width:3.5px !important;}
+  #UCAP-CONTENT-FORPRINT table td[style*='border-top:1.0000pt']{border-top-width:3.5px !important;}
+  #UCAP-CONTENT-FORPRINT table td[style*='border-left:1.0000pt']{border-left-width:3px !important;}
+  #UCAP-CONTENT-FORPRINT table td[style*='border-right:1.0000pt']{border-right-width:3px !important;} */
+
+  /* 针对 信息公开_国务院文件 细览 */
+  .printing.XXGK_GWYWJ .pages_content{line-height: 2.08;}
+  /* 头部框 */
+  .printing.XXGK_GWYWJ .pctoubukuang1{font-size:26px !important;margin:40px 55px;width:auto;}
+  .printing.XXGK_GWYWJ .pctoubukuang1 *{font-size:26px !important;}
+  .printing.XXGK_GWYWJ .pages_content{padding:42px 58px 0px;}
+
+
+
+  /* 针对 政策_国务院部门文件细览 */
+  .printing.ZC_GWYBMWJ .pages_content{line-height: 2.08;}
+  /* 头部框 */
+  .printing.ZC_GWYBMWJ .pctoubukuang1{font-size:26px !important;}
+  .printing.ZC_GWYBMWJ .pctoubukuang1 *{font-size:26px !important;}
+  .printing.ZC_GWYBMWJ .policyLibraryOverview_content .pages_content{width:auto !important;padding:0 !important;}
+  .printing.ZC_GWYBMWJ .policyLibraryOverview_gwy_bmwj{width:980px !important;}
+  .printing.ZC_GWYBMWJ .pctoubukuang1{width:auto !important;}
+
+  /* 针对 中央有关文件_细览 */
+  .printing.ZYYGWJ .oneColumn{padding:56px 0 0 !important;}
+  .printing.ZYYGWJ .article.oneColumn{width:auto !important;}
+  .printing.ZYYGWJ .pages_content{width:auto !important;line-height: 2.08;}
+  .printing.ZYYGWJ .content{width:1000px !important;}
+}
+@media print{
+  html,body{min-width:auto !important;}
+  @page{
+      size:auto;
+      margin-top:20mm;
+      margin-bottom:20mm;
+  }
+}

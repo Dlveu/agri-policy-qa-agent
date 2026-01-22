@@ -1,0 +1,39 @@
+$(document).ready(function() {  
+  $('.btn_print').click(function() {    
+      // 克隆.doc-info元素并附加到.container的底部  
+      var $docInfoClone = $('.doc-info').clone().css({  
+        'display': 'block',  
+        'margin-top': '10px' // 添加上边距10px  
+      });
+      $('.container').append($docInfoClone);  
+
+      // 样式调整  
+      $('body').addClass('printing');  
+
+      // 打印页面  
+      window.print();  
+
+      // 尝试使用onafterprint事件恢复页面状态  
+      if (window.onafterprint) {  
+          window.onafterprint = function() {  
+              // 移除克隆的.doc-info元素  
+              $docInfoClone.remove();  
+
+              // 移除打印类  
+              $('body').removeClass('printing');  
+
+              // 清除onafterprint事件，避免重复触发  
+              window.onafterprint = null;  
+          };  
+      } else {  
+          // 如果不支持onafterprint事件，使用setTimeout作为回退方案  
+          setTimeout(function() {  
+              // 移除克隆的.doc-info元素  
+              $docInfoClone.remove();  
+
+              // 移除打印类  
+              $('body').removeClass('printing');  
+          }, 1000); // 延迟1秒恢复显示
+      }  
+  });   
+});

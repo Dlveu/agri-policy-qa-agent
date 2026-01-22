@@ -1,0 +1,28 @@
+/* 打印样式 */  
+.btn_print{float: right;cursor:pointer;line-height: 18px;}
+.btn_print img{padding-left:5px;vertical-align: middle;}
+.printing .print_logo_box{display:none;}
+body.printing{min-width:auto!important;width:auto!important;background:none;} 
+.printing .print_logo_box{display:block!important;border-bottom: 2px solid #a91728;padding: 0 0 10px;margin-bottom:30px}
+.printing .print_logo{width:1200px;margin:0 auto;}
+.printing .container{width: 90%;padding:5% 5% 0;}
+.printing .leftbox,.printing .headerBox{width: 100%;padding:0;border:0;}
+.printing #mainText{width:auto;padding:3% 3% 0;word-break: break-word;text-align: justify;}
+.printing .g-nav-box,.printing .g_head_box,.printing .crumbsBox,.printing .rightbox,.printing .doc-info,.printing #fontSize,.printing #proclaim,.printing #div_div,.printing #qr_wrap,.printing .fujian,.printing .g_links_box,.printing .g_foot_box,.printing .btn_print,.printing #othermessage p.fl,.printing .repeatX,.printing .othermessage{display: none;}  
+.printing .box,.printing .mainTextBox,.printing #mainText,.printing .m-container,.printing .header{width: auto;}
+.printing .header h1 p{font-size: 36px;padding: 10px 0;line-height:1.5em;}
+.printing #mainText p{font-size: 24px!important;line-height: 2em!important;}
+.printing .doc-info {margin-top: 20px;}  
+.printing .g-page{width: 100%;}
+.printing .zc_zcwj{width:90%;padding:4%;}
+@media print {  
+    html,body{min-width:auto !important;width:auto;background:none;}
+    @page{
+          size:auto;
+          margin-top:20mm;
+          margin-bottom:20mm;
+      }
+}
+@media only screen and (max-width: 750px) {
+   .btn_print{display:none;}
+}

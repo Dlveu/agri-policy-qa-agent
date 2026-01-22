@@ -1,0 +1,397 @@
+* {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+  width: 100%;
+  /* margin: 0 20px; */
+  padding: 0;
+}
+.gwy_gb {
+  width: 100%;
+  padding-bottom: 0;
+}
+.gwy_gb .BreadcrumbNav a:first-child {
+  font-weight: bold !important;
+}
+.bottom_xzfgk {
+  margin: 0 20px;
+  padding-bottom: 0;
+}
+.padd_xzfgk {
+  border: none;
+}
+.h1_xzfgk {
+  padding: 0;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  font-size: 40px;
+}
+
+.padd {
+  padding: 0 20px;
+}
+.no-breadNav-padd{
+  padding-top: 20px;
+  margin: 0 20px;
+}
+.padd-zyygwj {
+  margin: 0 20px;
+}
+.oneColumn.oneColumn_gwygb{
+  padding: 0;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.BreadcrumbNav {
+  font-size: 32px;
+  line-height: 60px;
+  height: auto;
+  padding: 10px 0;
+}
+
+.BreadcrumbNav a {
+  font-weight: normal !important;
+  color: #000;
+  text-decoration-color: rgb(0, 0, 0);
+  -moz-text-decoration-color: rgb(0, 0, 0);
+  margin: 0 2.5px;
+  font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+}
+
+.BreadcrumbNav a:first-child {
+  margin-left: 0;
+  color: #000f52;
+}
+
+.oneColumn {
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+.oneColumn.hlw_dc {
+  padding-left: 0;
+  padding-right: 0;
+}
+.oneColumn.pub_border_miaodongdownload
+{
+  padding-left: 0;
+  padding-right: 0;
+}
+/* 李克强细览 */
+.lkq {
+  margin-top: 20px;
+}
+/* 李克强细览 */
+
+.oneColumn h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+  font-weight: normal;
+  line-height: 64px;
+  padding: 0;
+  font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+}
+.oneColumn .video_ty {
+  font-family: "microsoft yahei";
+}
+/* 李克强细览 */
+.oneColumn .lkq-h1 {
+  padding-top: 0;
+}
+/* 李克强细览 */
+
+.pages-date {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 26px;
+  height: auto;
+  padding-top: 0;
+  color: #3b3b3b;
+  line-height: 44.8px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  font-family: "microsoft yahei";
+}
+
+.pages-date span.font {
+  margin: 0 20px;
+}
+
+.pages_content {
+  padding: 0;
+  font-size: 28px;
+  line-height: 44.8px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.pages_content img {
+  max-width: 100%;
+}
+
+.pages_content p {
+  font-size: 24pt;
+  color: #000;
+  /* line-height: 51.2px; */line-height: 1.6;
+  margin-bottom: 17px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+.content_gjgzk .pages_content p {
+  line-height: 1.6 !important;
+}
+
+.pages_content p:first-child {
+  /* text-indent: 0 !important; */
+}
+
+.pages_content span {
+  font-size: 24pt;
+  font-family: '宋体';
+}
+
+.pageInfo {
+  margin-bottom: 20px;
+}
+
+.editor {
+  font-size: 28px;
+  line-height: 44.8px;
+  padding: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.editor span {
+  margin-right: 0;
+}
+
+.editor span a {
+  color: #000;
+}
+
+#pageBreak {
+  margin: 0;
+  width: 100% !important;
+  margin-bottom: 20px;
+}
+
+#pageBreak span.laypage_curr, #pageBreak a {
+  font-size: 28px;
+  line-height: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 10px;
+  padding: 0 16px;
+  width: auto !important;
+}
+
+.related {
+  margin: 0;
+  padding: 8px;
+  border: 0;
+}
+
+.xg-list .pannel-title {
+  font-size: 36px;
+  line-height: 57.6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+}
+
+.list01 {
+  margin: 32px 0;
+}
+
+.list01 li  {
+  background: none;
+  font-size: 32px;
+  line-height: 44.8px;
+  padding: 0;
+}
+
+.related ul li a {
+  font-size: 32px;
+  line-height: 51.2px;
+  font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3","FontAwesome",sans-serif;
+}
+
+.mhide {
+  display: none !important;
+}
+
+.subjectImg{
+  width:100%;
+}
+
+
+.videoBox{width:100%;text-align: center;}
+.videoBox video{
+  width:100%;
+  height:461px;
+  background:#000;
+}
+
+
+.pages_content2{
+  padding:0;
+}
+.contentLeft{
+  width:100%;
+  float:left;
+  border-right:0;
+  padding-right:0;
+  box-sizing: border-box;
+}
+.bottomimg img{
+  width:100%;
+}
+
+.bottomimg a:last-child img{
+  width:536px;
+  height:auto;
+}
+
+
+
+#audio_box{ margin-top:20px; position:relative;height:72px;overflow:hidden; background:#494949; width:650px; margin:0 auto;}
+.audiojs{ position:absolute; right:0px; top:2px; box-shadow:none; width:650px; background:#494949;height:72px;}
+#audio_box .audio_list{ position:absolute; left:0px; bottom:40px; height:0px; overflow:hidden; z-index:99;background: rgba(0,0,0,0.6); width:100%; right:0px;}
+#audio_box .time em{ color:#A2D101;}
+#audio_box .time{ font-size:14px; border-left:1px solid #A2D101;height:72px;line-height:72px;display:none;}
+.audiojs .progress{ background:#A2D101;height:20px;}
+.audiojs .play-pause{ border-right:1px solid #A2D101;height:72px;width:40px;}
+.audiojs .loaded,.audiojs .scrubber{ width:470px;margin-top:22px;height:20px;}
+.audiojs .play-pause>p{
+  width:40px;
+  height:72px;
+  background-size: 60px 300px;
+}
+.audiojs .play {
+  background: url(trs_player-graphics.gif) -8px 2px no-repeat;
+  margin-top: 0px;
+}
+
+.audiojs .loading {
+  background: url(trs_player-graphics.gif) -8px -33px no-repeat;
+}
+
+.audiojs .error {
+  background: url(trs_player-graphics.gif) -8px -63px no-repeat;
+}
+
+.audiojs .pause {
+  background: url(trs_player-graphics.gif) -8px -93px no-repeat;
+}
+#audio_box .prev{ position:absolute; top:0px; left:0px; height: 36px; margin: 0; overflow: hidden; padding: 4px 6px; width: 25px;border-right:1px solid #A2D101; background:url(/govweb/xhtml/images/public/player-graphics.gif) no-repeat center -145px #494949 ;}
+#audio_box .next{position:absolute; top:0px; left:37px;border-right:1px solid #A2D101;height: 36px; margin: 0;overflow: hidden; padding: 4px 6px; width: 25px;background:url(/govweb/xhtml/images/public/player-graphics.gif) no-repeat center -115px #494949;}
+
+
+.mdownIco {
+  display:inline-block;
+  width:120px;
+  background: url(trs_download823.jpg) no-repeat 0px 6px;
+  background-size:35px 25px;
+  padding-left: 28px;
+}
+
+/* 2023公共尾部细览 */
+.ggwbxl2023oneColumn {
+  margin-top: 0;
+}
+.oneColumn .ggwbxl2023h1 {
+  margin: 10px 0 32px 0;
+}
+th, td {
+  font-size: 36px !important;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+}
+.pages_content a {
+  /* display: block; */
+  /* text-align: left; */
+  /* padding: 28px 10px; */
+  font-family: 宋体;
+}
+
+.content_history_gb div p {
+  font-family: "microsoft yahei";
+}
+.content_history_gb a {
+  display: inline;
+  font-family: "microsoft yahei";
+}
+
+/*公报细览*/
+.oneColumn.gb_article{padding-top: 20px;margin-top: 0;}
+.oneColumn_gwygb .pages_content p:nth-child(1) span, .oneColumn_gwygb .pages_content p:nth-child(2) span {
+  line-height: 1.6;
+}
+
+/* 国家规章库细览 */
+.guohui_logo {
+  border-bottom: 4px solid #015293;
+  margin: 0 0 20px 0;
+  padding-bottom: 20px;
+}
+.guohui_logo img {
+  margin: 10px 0;
+}
+.guohui_logo img:nth-child(1) {
+  width: 62px;
+}
+.guohui_logo img:nth-child(2) {
+  max-height: 40px;
+  height: 40px;
+}
+.m-gjgzk_wz {
+  border-top: 4px solid #005393;
+  text-align: right;
+  color: #005393;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 16px 0 32px;
+  padding-top: 16px;
+  letter-spacing: 1px;
+}
+/* 国家规章库细览 */
+
+/* 李克强细览 */
+.pages_content img {
+    width: 100%;
+}
+/* 李克强细览 */
+
+/* 政策_行政法规库细览 */
+.addBgColor {
+    padding: 0;
+    border: none;
+    margin-top: 0;
+}
+.addBgColor_content {
+    background-color: #fff;
+}
+.lkq-h1 {
+    font-size: 40px;
+    text-align: center;
+}
+#ti span {
+    font-size: 32px !important;
+}
+.padd_xzfgk #ti span {
+  line-height: 1.6;
+}
+/* 政策_行政法规库细览 */

@@ -1,0 +1,208 @@
+﻿//-------------------------------
+//@files: 全站头文件引用的功能文件
+//@author: yn
+//@date: 2019/01/28
+//-------------------------------
+$(function(){
+    //默认搜索引擎
+    $("#search").on("submit",znForm);//搜索功能暂时只保留政策
+    //切换搜索
+    var _flip = 0;
+    $(".u-search-recommend li").on("click",function(){
+        _flip++
+        var _this = $(this);
+        var i = $(".u-search-recommend li").index(this);
+        switch(i){
+            case 0:
+                $("#search").off("submit",znForm);
+                $("#search").off("submit",jjForm);
+                $("#search").off("submit",zcForm);
+                $("#search").on("submit",znForm);
+                break;
+            case 1:
+                $("#search").off("submit",zcForm);
+                $("#search").off("submit",znForm);
+                $("#search").on("submit",jjForm);
+                break
+            case 2:
+                $("#search").off("submit",jjForm);
+                $("#search").off("submit",znForm);
+                $("#search").on("submit",zcForm);
+                break;
+            default:
+                return false;
+        }
+        $(".u-search-row").text(_this.text());
+        $(".u-search-row").css("background","url(http://www.beijing.gov.cn/images/icon_row_off_yn_20180925.png) 74px center no-repeat");
+        $(".u-search-recommend").stop().slideUp(400);
+    });
+    // 搜索框下拉
+    $(".u-search-row").on("click",function(e){
+        if (_flip++ % 2 === 0){
+            $(this).css("background","url(http://www.beijing.gov.cn/images/icon_row_on_yn_20180925.png) 74px center no-repeat");
+            $(".u-search-recommend").stop().slideDown(400);
+        }else{
+            $(this).css("background","url(http://www.beijing.gov.cn/images/icon_row_off_yn_20180925.png) 74px center no-repeat");
+            $(".u-search-recommend").stop().slideUp(400);
+        }
+        e.preventDefault();
+    });
+    // 搜索框禁止中英、空格等字符
+    //window.alert = function(){ return false; }
+    /*$("#keyword").mousemove(function(){
+        var keys=$("#keyword").val();
+        var regEn = /[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im,
+        regCn = /[?！#￥（――）：；“”‘、，|《。》？、【】[\]]/im,
+        regs = /\s+/;
+        if(regEn.test(keys) || regCn.test(keys) || regs.test(keys)) {
+            $("#keyword").val("");
+            $("#keyword").focus();
+        };
+    });
+    $("#keyword").on('change',function(){
+        var keys=$("#keyword").val();
+        var regEn = /[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im,
+        regCn = /[?！#￥（――）：；“”‘、，|《。》？、【】[\]]/im,
+        regs = /\s+/;
+        if(regEn.test(keys) || regCn.test(keys) || regs.test(keys)) {
+            $("#keyword").val("");
+            $("#keyword").focus();
+        };
+    });*/
+    //导航
+    var _current =$(".g-nav .m-nav-current").length;
+    $(".g-nav .m-nav-btn").on("mouseover",function(){
+        var i = $(".g-nav .m-nav-btn").index(this);
+        $(".g-nav .m-nav-current").find(".m-nav-secondary").removeClass("m-nav-secondary-show");;
+        $(".g-nav .m-nav-current").find(".u-nav-links").removeClass("u-nav-select");
+        $(".g-nav .m-nav-btn").eq(i).find(".m-nav-secondary").addClass("m-nav-secondary-show");
+        $(".g-nav .m-nav-btn").eq(i).find(".u-nav-links").addClass("u-nav-select");
+    });
+    $(".g-nav .m-nav-btn").on("mouseout",function(){
+        if(_current>0){
+            $(".g-nav .m-nav-current").find(".m-nav-secondary").addClass("m-nav-secondary-show").parent().siblings().find(".m-nav-secondary").removeClass("m-nav-secondary-show");
+            $(".g-nav .m-nav-current").find(".u-nav-links").addClass("u-nav-select").parent().siblings().find(".u-nav-links").removeClass("u-nav-select");
+        }else{
+            $(".g-nav .u-nav-links").removeClass("u-nav-select");
+        }
+    });
+    // 移动端导航
+    var _flag0 = 0;
+    var _flag1 = 0;
+    var _flag2 = 0;
+    var _flag3 = 0;
+    var _flag4 = 0;
+    var _flag5 = 0;
+    function nav_add(num){
+        $(".public_nav p").eq(num).css({"color":"#ffedbf"}).parent().siblings().find("p").css({"color":"#fff"});
+        $(".public_nav p").eq(num).find("img").attr("src","http://www.beijing.gov.cn/ywdt/images/icon_select_yn_20180730.png").parent().parent().siblings().find("img").attr("src","http://www.beijing.gov.cn/ywdt/images/icon_yn_20180730.png");
+        $(".public_nav .nav_menu").eq(num).stop().slideDown("200").parent().siblings().find(".nav_menu").hide();
+        switch(num){
+            case 0:
+                _flag1 = 0;
+                _flag2 = 0;
+                _flag3 = 0;
+                _flag4 = 0;
+                _flag5 = 0;
+                break;
+            case 1:
+                _flag0 = 0;
+                _flag2 = 0;
+                _flag3 = 0;
+                _flag4 = 0;
+                _flag5 = 0;
+                break;
+            case 2:
+                _flag0 = 0;
+                _flag1 = 0;
+                _flag3 = 0;
+                _flag4 = 0;
+                _flag5 = 0;
+                break;
+            case 3:
+                _flag0 = 0;
+                _flag1 = 0;
+                _flag2 = 0;
+                _flag4 = 0;
+                _flag5 = 0;
+                break;
+            case 4:
+                _flag0 = 0;
+                _flag1 = 0;
+                _flag2 = 0;
+                _flag3 = 0;
+                _flag5 = 0;
+                break;
+            case 5:
+                _flag0 = 0;
+                _flag1 = 0;
+                _flag2 = 0;
+                _flag3 = 0;
+                _flag4 = 0;
+                break;
+            default:
+                return;
+        }
+    }
+    function nav_remove(num){
+        $(".public_nav p").eq(num).css({"color":"#ffffff"});
+        $(".public_nav p").eq(num).find("img").attr("src","http://www.beijing.gov.cn/ywdt/images/icon_yn_20180730.png");
+        $(".public_nav .nav_menu").eq(num).stop().slideUp("200");
+    }
+    $(".public_nav p").on("click",function(event){
+        var i = $(".public_nav p").index(this);
+        switch(i){
+            case 0:
+                if(_flag0++ % 2 === 0){
+                    nav_add(i);
+                }else{
+                    nav_remove(i);
+                }
+                break;
+            case 1:
+                if(_flag1++ % 2 === 0){
+                    nav_add(i);
+                }else{
+                    nav_remove(i);
+                }
+                break;
+            case 2:
+                if(_flag2++ % 2 === 0){
+                    nav_add(i);
+                }else{
+                    nav_remove(i);
+                }
+                break;
+            case 3:
+                if(_flag3++ % 2 === 0){
+                    nav_add(i);
+                }else{
+                    nav_remove(i);
+                }
+                break;
+            case 4:
+                if(_flag4++ % 2 === 0){
+                    nav_add(i);
+                }else{
+                    nav_remove(i);
+                }
+                break;
+            case 5:
+                if(_flag5++ % 2 === 0){
+                    nav_add(i);
+                }else{
+                    nav_remove(i);
+                }
+                break;
+            default:
+                return;
+        }
+        event.stopPropagation();
+        event.preventDefault();
+    });
+    //手机端导航
+    $('.m_mobile_menu_btn').on('click',function(){
+        $(this).children("i").toggleClass('m_z_hover');
+        $('.m_top_menu ul').slideToggle();
+    });
+})
