@@ -33,3 +33,27 @@ pip install -r requirements.txt
 # 配置环境变量（.env 文件）
 OPENAI_API_KEY=your_api_key
 OPENAI_BASE_URL=your_base_url (可选)
+
+# 安装依赖
+  - Python : 3.10.19
+  - pydantic: 2.12.5
+  - streamlit: 1.53.0
+  - langchain_openai: 1.1.7
+  - langchain_core: 1.2.7
+  - langgraph: 1.0.6
+  - langchain_community: 0.4.1
+  - faiss-cpu: 1.13.2
+  - python-dotenv: 1.2.1
+
+# 启动 Streamlit Web 界面（推荐）
+streamlit run app.py
+
+# 若 Web 环境不可用，自动降级为 CLI 模式
+python app.py
+  - beautifulsoup4: 4.14.3
+
+#项目结构
+├── faiss_index/          # FAISS 政策知识库向量索引
+├── app.py                # 主程序（Agent + Web 界面）
+├── .env                  # 环境变量配置
+└── requirements.txt      # 依赖清单
