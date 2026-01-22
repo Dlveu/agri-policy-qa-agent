@@ -1,10 +1,35 @@
-  - Python : 3.10.19
-  - pydantic: 2.12.5
-  - streamlit: 1.53.0
-  - langchain_openai: 1.1.7
-  - langchain_core: 1.2.7
-  - langgraph: 1.0.6
-  - langchain_community: 0.4.1
-  - faiss-cpu: 1.13.2
-  - python-dotenv: 1.2.1
-  - beautifulsoup4: 4.14.3
+# 🌾 农业政策智能问答 Agent
+一款面向农户/农业从业者的智能问答系统，基于 LangChain + LangGraph + Streamlit 构建，专注解决农业政策相关的咨询需求，支持多轮动态追问、记忆管理和可视化交互。
+
+## ✨ 核心特性
+### 1. 智能交互能力
+- **多轮动态追问**：根据用户意图（政策解读/资格核查/金额计算/办理流程）智能引导，仅追问必要信息，避免冗余提问
+- **意图精准识别**：内置问候/感谢/告别/身份询问/政策咨询等多类意图分类，优先响应通用话术，精准定位政策类需求
+- **记忆管理机制**：短记忆（修剪对话历史，保留关键上下文）+ 长记忆（定期总结对话核心信息），支持跨轮次上下文理解
+
+### 2. 技术架构
+- **RAG 增强回答**：基于 FAISS 向量库检索政策原文，确保回答有依据，禁止无根据推断
+- **LangGraph 工作流**：可视化编排 Agent 执行流程（输入解析→意图分类→通用回复/RAG检索/追问→记忆更新）
+- **Streamlit 可视化界面**：替代传统 CLI，提供友好的 Web 对话界面，支持对话历史保存/清空
+
+### 3. 业务适配性
+- **政策类回答规范**：强制引用政策原文 + 通俗解读，无依据时提示咨询官方渠道
+- **多场景覆盖**：支持补贴标准解读、申请资格核查、金额计算、办理流程查询等核心场景
+- **兼容降级**：Web 环境不支持时自动切换到 CLI 交互模式，保证可用性
+
+## 🛠 技术栈
+- 核心框架：LangChain (对话管理)、LangGraph (Agent 工作流)
+- 大模型：OpenAI API (gpt-4o-mini)
+- 向量检索：FAISS (政策知识库)
+- 前端交互：Streamlit (Web 界面)
+- 其他：Pydantic (数据模型)、python-dotenv (环境配置)
+
+## 🚀 快速启动
+### 环境准备
+```bash
+# 安装依赖
+pip install -r requirements.txt
+
+# 配置环境变量（.env 文件）
+OPENAI_API_KEY=your_api_key
+OPENAI_BASE_URL=your_base_url (可选)
